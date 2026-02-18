@@ -38,11 +38,8 @@
                     <th>No.</th>
                     <th style="display:none;">id</th>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Role</th>
-                    <th>Status</th>
-                    <th>Phone</th>
-                    <th>Created At</th>
+                    <th>Birthday</th>
+                    <th>Address</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -74,40 +71,13 @@
 
               <div class="form-group">
                 <label>Birthday</label>
-                <input type="email" name="email" class="form-control" required />
+                <input type="date" name="bday" class="form-control" required />
               </div>
+
               <div class="form-group">
                 <label>Address</label>
-                <input type="password" name="password" class="form-control" required />
+                <input type="text" name="address" class="form-control" required />
               </div>
-
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label>Role</label>
-                    <select class="form-control" name="role">
-                      <option value="Admin">Admin</option>
-                      <option value="User">User</option>
-                      <option value="Guest">Guest</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                 <div class="form-group">
-                  <label>Status</label>
-                  <select class="form-control" name="status">
-                    <option value="Active">Active</option>
-                    <option value="In Active">In Active</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="text" name="phone" class="form-control" required />
-            </div>
           </div>
 
           <div class="modal-footer">
@@ -140,43 +110,14 @@
               </div>
 
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <label for="email">Birtday</label>
+              <input type="date" class="form-control" id="bday" name="bday" required>
             </div>
 
             <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" name="password">
+              <label for="password">Address</label>
+              <input type="text" class="form-control" id="address" name="address">
             </div>  
-
-             <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label>Role</label>
-                    <select class="form-control" name="role" id="role">
-                      <option value="Admin">Admin</option>
-                      <option value="User">User</option>
-                      <option value="Guest">Guest</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                 <div class="form-group">
-                  <label>Status</label>
-                  <select class="form-control" name="status" id="status">
-                    <option value="Active">Active</option>
-                    <option value="In Active">In Active</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="text" name="phone" id="phone" class="form-control" required />
-            </div>        
-
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class='fas fa-times-circle'></i> Cancel</button>
@@ -194,5 +135,5 @@
 
 <?= $this->section('scripts') ?>
 <script> const baseUrl = "<?= base_url() ?>"; </script>
-<script src="<?= base_url('js/users/users.js') ?>"></script>
+<script src="<?= base_url('js/profiling/profiling.js') ?>"></script>
 <?= $this->endSection() ?>

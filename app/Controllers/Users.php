@@ -6,7 +6,7 @@ use App\Models\UserModel;
 use CodeIgniter\Controller;
 use App\Models\LogModel;
 
-class Users extends Controller
+class Profiling extends Controller
 {
     public function index(){
         $model = new UserModel();
